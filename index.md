@@ -420,16 +420,7 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in 
-<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
-{% endif %}
+{% include custom-schedule.html %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
@@ -438,6 +429,7 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
+<div class="alert alert-info">
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact the workshop organisers
 <a href="mailto:{{page.email}}">contact the workshop organisers</a>
   {% if page.email %}
@@ -456,7 +448,7 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
   {% endif %}
   if you would like more information about the planned schedule.
   for more information.
-
+</div>
 {% endif %}
 
 <hr/>
