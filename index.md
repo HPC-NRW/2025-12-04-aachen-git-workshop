@@ -430,8 +430,7 @@ how one of these schedule tables is constructed.
 
 {% if site.pilot %}
 <div class="alert alert-info">
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact the workshop organisers
-<a href="mailto:{{page.email}}">contact the workshop organisers</a>
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please contact the workshop organiser(s)
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -447,7 +446,6 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
   to-be-announced
   {% endif %}
   if you would like more information about the planned schedule.
-  for more information.
 </div>
 {% endif %}
 
