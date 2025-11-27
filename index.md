@@ -55,11 +55,6 @@ remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `
 fields in `_config.yml`
 </div>
 {% endcomment %}
-<div class="alert alert-danger">
-<strong>Note:</strong> We decided to allow separate booking of the two workshop
-days. The first day (Thursday) covers Git & Gitlab Basics and the second day
-(Friday) covers advanced topics of Git & Gitlab.
-</div>
 {% comment %}
 8< ============================= until here ==================
 {% endcomment %}
@@ -213,6 +208,11 @@ This block displays the date and links to Google Calendar.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
+<div class="alert alert-info">
+<strong>Note:</strong> You can now book the two workshop
+days separately. The first day (Thursday) covers Git & Gitlab Basics and the second day
+(Friday) covers advanced topics of Git & Gitlab.
+</div>
 
 {% comment %}
 SPECIAL REQUIREMENTS
