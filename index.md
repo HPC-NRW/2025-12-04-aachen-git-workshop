@@ -467,6 +467,7 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
+
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
@@ -516,7 +517,25 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
+<p>
 Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
+</p>
+<div class="alert alert-info">
+<strong><em>Note:</em>You DO NOT need an account on Github.com or
+Gitlab.com.</strong>
+<ol>
+<li>Go to <a href="https://gitlab.git.nrw">Gitlab Login at Git.NRW</a>.</li>
+<li><strong>Use the University Sign-In</strong> at the bottom right</li>
+<li>Select a suitable SSO Provider from the list.</li>
+<li>Follow the instructions of your SSO provider.</li>
+<li>If desired, adapt your account name, by clicking on the avatar on the top
+right and selecting <em>Preferences &gt; Account</em></li>
+<li><a href="mailto:hermanns@itc.rwth-aachen.de">Send your account name to the workshop organizers</a>.</li>
+</ol>
+<p>
+<strong>If there is no suitable SSO Provider for you, please <a href="mailto:hermanns@itc.rwth-aachen.de">contact the workshop organizers.</a></strong>
+</p>
+</div>
 {% endif %}
