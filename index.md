@@ -382,8 +382,12 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
+{% comment %}
 <p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+{% endcomment %}
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
@@ -526,13 +530,13 @@ to obtain the software and data you will need to follow the lesson.
 <strong><em>Note:</em>You DO NOT need an account on Github.com or
 Gitlab.com.</strong>
 <ol>
-<li>Go to <a href="https://gitlab.git.nrw">Gitlab Login at Git.NRW</a>.</li>
+<li>Go to the <strong><a href="https://gitlab.git.nrw">Gitlab Login of Git.NRW</a></strong>.</li>
 <li><strong>Use the University Sign-In</strong> at the bottom right</li>
-<li>Select a suitable SSO Provider from the list.</li>
+<li>Select a <strong>suitable SSO Provider</strong> from the list.</li>
 <li>Follow the instructions of your SSO provider.</li>
-<li>If desired, adapt your account name, by clicking on the avatar on the top
+<li>If desired, <strong>adapt your account name</strong>, by clicking on the avatar on the top
 right and selecting <em>Preferences &gt; Account</em></li>
-<li><a href="mailto:hermanns@itc.rwth-aachen.de">Send your account name to the workshop organizers</a>.</li>
+<li><strong><a href="mailto:hermanns@itc.rwth-aachen.de">Send your account name to the workshop organizers</a></strong>.</li>
 </ol>
 <p>
 <strong>If there is no suitable SSO Provider for you, please <a href="mailto:hermanns@itc.rwth-aachen.de">contact the workshop organizers.</a></strong>
